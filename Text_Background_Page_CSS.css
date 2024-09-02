@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+.container{
+    background-image: url('/imgs/Animated_Background-Text_BG.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color:#ffffff;
+    padding:20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container h1{
+    font-size: 90px;
+    font-family: 'Charm';
+    background-image: url('/imgs/Text_Animation_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: bgMove 10s linear infinite;
+    -webkit-animation: bgMove 10s linear infinite;
+}
+.s1{
+    color:aquamarine;
+}
+.s2{
+    color:burlywood;
+}
+.s3{
+    color:powderblue;
+}
+.s4{
+    color:sandybrown;
+}
+.s5{
+    color:mediumturquoise;
+}
+.container p,h3{
+    height:40px;
+    font-family: 'Charm';
+    font-size: 40px;
+    color:aqua;
+}
+.container p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+@keyframes bgMove{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 50% 100%;
+    }
+}
